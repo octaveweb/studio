@@ -1,16 +1,16 @@
 @font-face {
     font-family: f1;
-    src: url(/public/font/63cffc0a3942456e003bc265_Chillax-Regular.woff);
+    src: url(../font/63cffc0a3942456e003bc265_Chillax-Regular.woff);
 }
 
 @font-face {
     font-family: f2;
-    src: url(/public/font/63cffc20aa8997095067596f_Satoshi-Light.woff);
+    src: url(../font/63cffc20aa8997095067596f_Satoshi-Light.woff);
 }
 
 @font-face {
     font-family: f3;
-    src: url(/public/font/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
+    src: url(../font/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
 }
 
 * {
@@ -173,7 +173,7 @@ section {
     padding: 0  1rem;
 
     .top {
-        background-image: url(/public/image/img.webp);
+        background-image: url(./public/image/img.webp);
         background-size: cover;
         border-radius: $section-radius;
     }
