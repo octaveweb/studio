@@ -142,8 +142,14 @@ header nav .menu ul:nth-child(2) {
   gap: 0.4rem;
   list-style-type: none;
 }
-header nav .menu ul:nth-child(1) li a {
+header nav .menu ul:nth-child(1) li .btn {
   background-color: #1d1d1d;
+  color: #f4f2ed;
+  display: flex;
+  align-items: center;
+}
+header nav .menu ul:nth-child(1) li .btn:hover {
+  background-color: #313131;
   color: #f4f2ed;
 }
 header nav .menu ul:nth-child(2) #menu-icon {
@@ -163,12 +169,17 @@ header nav .menu ul:nth-child(2) li .btn {
   display: flex;
   align-items: center;
 }
+header nav .menu ul:nth-child(2) li .btn:hover {
+  background-color: #313131;
+  color: #f4f2ed;
+}
 header nav .menu ul:nth-child(2) .bg-color .btn {
   background-color: #cebd63;
   color: #1a1a1a;
 }
 header nav .menu ul:nth-child(2) .bg-color .btn:hover {
   background-color: #ad9d49;
+  color: #1a1a1a;
 }
 
 .section .titel {

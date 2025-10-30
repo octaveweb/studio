@@ -51,7 +51,8 @@
 
                         <li class="bg-color" id="touch-btn"><a href="#" class="btn">Get in touch</a></li>
 
-                        <li class="bg-color" id="menu-icon"><a href="#" class="btn" ><i class="fa-light fa-bars"></i></a></li>
+                        <li class="bg-color" id="menu-icon"><a href="#" class="btn"><i class="fa-light fa-bars"></i></a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -240,44 +241,44 @@
                         <div class="icon"><i class="fa-brands fa-behance"></i></div>
                     </div>
                 </div>
-                </div>
-                <div class="top-right">
-                    <ul>
-                        <li class="hover_effect">Pages</li>
-                        <li><span class="hov-tag">Home</span></li>
-                        <li><span class="hov-tag">Services</span></li>
-                        <li><span class="hov-tag">Studio</span></li>
-                        <li><span class="hov-tag">Jobs</span></li>
-                        <li><span class="hov-tag">Contact</span></li>
-                        <li class="bg-color"><a href="#" class="btn">More Templates</a></li>
-                    </ul>
-                    <ul>
-                        <li>CMS</li>
-                        <li><span class="hov-tag">Projects</span></li>
-                        <li><span class="hov-tag">Project Single</span></li>
-                        <li><span class="hov-tag">Blog</span></li>
-                        <li><span class="hov-tag">Blog Single</span></li>
-                        <li><span class="hov-tag">Shop</span></li>
-                        <li><span class="hov-tag">Shop Single</span></li>
-                    </ul>
-                    <ul>
-                        <li>Utility Pages</li>
-                        <li><span class="hov-tag">404 Error Page</span></li>
-                        <li><span class="hov-tag">Password Protected</span></li>
-                        <li><span class="hov-tag">Styleguide</span></li>
-                        <li><span class="hov-tag">Licensing</span></li>
-                        <li><span class="hov-tag">Changelog</span></li>
-                    </ul>
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li class="hover_effect">Pages</li>
+                    <li><span class="hov-tag">Home</span></li>
+                    <li><span class="hov-tag">Services</span></li>
+                    <li><span class="hov-tag">Studio</span></li>
+                    <li><span class="hov-tag">Jobs</span></li>
+                    <li><span class="hov-tag">Contact</span></li>
+                    <li class="bg-color"><a href="#" class="btn">More Templates</a></li>
+                </ul>
+                <ul>
+                    <li>CMS</li>
+                    <li><span class="hov-tag">Projects</span></li>
+                    <li><span class="hov-tag">Project Single</span></li>
+                    <li><span class="hov-tag">Blog</span></li>
+                    <li><span class="hov-tag">Blog Single</span></li>
+                    <li><span class="hov-tag">Shop</span></li>
+                    <li><span class="hov-tag">Shop Single</span></li>
+                </ul>
+                <ul>
+                    <li>Utility Pages</li>
+                    <li><span class="hov-tag">404 Error Page</span></li>
+                    <li><span class="hov-tag">Password Protected</span></li>
+                    <li><span class="hov-tag">Styleguide</span></li>
+                    <li><span class="hov-tag">Licensing</span></li>
+                    <li><span class="hov-tag">Changelog</span></li>
+                </ul>
 
 
-                </div>
-                <div class="bottom-right">
-                    <p> © Made by <a href="#">Pawel Gola</a> - Powered by <a href="#">Webflow</a></p>
-                    <a href="#header" class="icon-contener">
-                        <div class="icon"><i class="fa-light fa-arrow-up"></i></div>
-                        <span class="titel">To Top</span>
-                    </a>
-                </div>
+            </div>
+            <div class="bottom-right">
+                <p> © Made by <a href="#">Pawel Gola</a> - Powered by <a href="#">Webflow</a></p>
+                <a href="#header" class="icon-contener">
+                    <div class="icon"><i class="fa-light fa-arrow-up"></i></div>
+                    <span class="titel">To Top</span>
+                </a>
+            </div>
         </footer>
     </main>
 
@@ -285,6 +286,18 @@
     Web Url
     https://alvy-template.webflow.io/studio
     -->
+
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script>
+        // Initialize Lenis
+        const lenis = new Lenis({ autoRaf: true });
+        lenis.on("scroll", console.log);
+
+        // Initialize GSAP
+        gsap.registerPlugin(TextPlugin);
+
+
+    </script>
 </body>
 
 </html>
