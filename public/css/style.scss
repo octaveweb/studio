@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .5s cubic-bezier(.7, 0, .3, 1);
 }
 
 $bg-color: #121212;
@@ -45,11 +46,10 @@ body {
 }
 
 main {
-
-    width: 100%;
+    max-width: 124rem;
     display: flex;
     flex-direction: column;
-
+    margin: 0 auto;
 }
 
 
@@ -398,6 +398,8 @@ header {
 
     .card-contener {
         display: flex;
+        justify-content: flex-start;
+        align-items: start;
         flex-wrap: wrap;
         gap: 1rem;
 
@@ -665,6 +667,3 @@ footer {
         }
     }
 }
-
-
-

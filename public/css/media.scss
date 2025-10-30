@@ -14,7 +14,8 @@ $animation-primary: all .5s cubic-bezier(.7, 0, .3, 1);
 $section-radius: 1rem;
 
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
+
+@media only screen and (min-width: 0px) and (max-width: 990px) {
     header {
         padding: 1rem 1rem 0rem 1.5rem;
 
@@ -225,6 +226,10 @@ $section-radius: 1rem;
 
     .section6 {
         .card-contener {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             .cards {
                 height: 23rem;
 
@@ -272,7 +277,7 @@ $section-radius: 1rem;
             }
         }
     }
-    
+
     footer {
         padding: 1rem 1rem 1rem;
         grid-template-columns: 1fr;
@@ -284,25 +289,28 @@ $section-radius: 1rem;
         ;
 
         .left {
-             padding: 1.5rem;;
+            padding: 1.5rem;
+            ;
         }
-           .top-right {
-              padding: 1rem;
+
+        .top-right {
+            padding: 1rem;
             display: flex;
             flex-flow: column;
-            ul{
-                li{
+
+            ul {
+                li {
                     margin: 1rem 0;
                 }
             }
-           }
-           
-    .bottom-right {
+        }
+
+        .bottom-right {
             padding: 1rem 2rem;
-        flex-flow: column;
-        text-align: center;
-        gap: 1rem;
-    }
+            flex-flow: column;
+            text-align: center;
+            gap: 1rem;
+        }
 
     }
 
