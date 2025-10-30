@@ -41,6 +41,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: $bg-color;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -52,8 +53,108 @@ main {
 }
 
 
+main {
+    .titel {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $text;
+        font-family: f3;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+
+    .hedding {
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        line-height: 120%;
+        font-family: $font-1;
+    }
+
+    .btn {
+        border-radius: .5rem;
+        text-decoration: none;
+        color: $text;
+        padding: .9rem 1.3rem;
+        display: flex;
+        transition: $animation-primary;
+        color: #f4f2ed;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 120%;
+
+        &:hover {
+            background-color: #313131;
+        }
+
+        p {
+            height: 1.3rem;
+            width: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color;
+            color: $textDark;
+            border-radius: 50px;
+            margin-left: .5rem;
 
 
+        }
+    }
+
+    .icon-contener {
+
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+
+        .icon {
+            height: 2.2rem;
+            width: 2.2rem;
+            padding: 1rem;
+            border-radius: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #292929;
+            color: #f4f2ed;
+            outline: 1px solid #494949f6;
+        }
+
+        .titel {
+            font-size: .9rem;
+            font-weight: 800;
+            margin: 0;
+
+
+        }
+    }
+
+    .hov-tag {
+        position: relative;
+
+        &::before {
+            content: "";
+            height: 1.5px;
+            width: 0%;
+            background-color: $text;
+            position: absolute;
+            top: 100%;
+            border-radius: 50px;
+            transition: $animation-primary;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+
+}
 
 header {
     font-family: $font-3;
@@ -86,42 +187,6 @@ header {
                 gap: .4rem;
                 list-style-type: none;
 
-                li {
-                    a {
-                        border-radius: .5rem;
-                        text-decoration: none;
-                        color: $text;
-                        padding: .9rem 1.3rem;
-                        display: flex;
-                        transition: $animation-primary;
-                        color: #f4f2ed;
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                        font-size: .9rem;
-                        font-weight: 400;
-                        line-height: 120%;
-
-                        &:hover {
-                            background-color: #313131;
-                        }
-
-                        p {
-                            height: 1.3rem;
-                            width: 1.3rem;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            background-color: $color;
-                            color: $textDark;
-                            border-radius: 50px;
-                            margin-left: .5rem;
-
-
-                        }
-                    }
-
-
-                }
             }
 
             ul:nth-child(1) {
@@ -137,7 +202,7 @@ header {
             ul:nth-child(2) {
 
                 li {
-                    a {
+                    .btn {
                         background-color: $bg-color2;
                         color: $text;
                     }
@@ -147,7 +212,7 @@ header {
 
                 .bg-color {
 
-                    a {
+                    .btn {
                         background-color: $color;
                         color: $textDark;
 
@@ -166,44 +231,39 @@ header {
 
 
 
-section {
+.section {
+    .titel {
+        margin-bottom: 12.9rem;
+    }
+}
+
+.section1,
+.section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    padding: 0  1rem;
+    padding: 0 1rem;
 
-    .top {
-        background-image: url(./public/image/img.webp);
+    .image {
+        background-image: url(../image/img.webp);
         background-size: cover;
         border-radius: $section-radius;
     }
 
-    .bottom {
+    .data {
         border-radius: $section-radius;
         background-color: $bg-color3;
         width: 100%;
         font-family: $font-1;
         padding: 4rem 4.2rem 0rem;
 
-        .titel {
-            font-size: 1rem;
-            text-transform: uppercase;
-            font-weight: 400;
-            color: $text;
-            font-family: $font-3;
-            text-decoration: none;
-            letter-spacing: 1px;
-            margin-bottom: 12.9rem;
-        }
+
+
 
         .text {
             color: $text;
 
-            h1 {
-                font-size: 4rem;
-                text-transform: uppercase;
-                font-weight: 300;
-                line-height: 120%;
+            .hedding {
                 margin-bottom: .5rem;
             }
 
@@ -218,33 +278,370 @@ section {
                 padding: 0 1rem 0 0;
             }
 
-            a {
-                margin:3rem 0rem 4rem;
-                text-decoration: none;
-                display: flex;
-                align-items: center;
-                gap: .8rem;
+            .icon-contener {
+                margin: 3rem 0rem 4rem;
 
-                .icon {
-                    height: 2.2rem;
-                    width: 2.2rem;
-                    padding: 1rem;
-                    border-radius: 10rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #292929;
-                    color: #f4f2ed;
-                    outline: 1px solid #494949f6;
-                }
-
-                p {
-                    font-size: .9rem;
-                    font-weight: 800;
-                    margin: 0;
+                i {
+                    transform: rotate(180deg);
                 }
             }
 
+        }
+    }
+}
+
+.section2 {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 4rem 0rem;
+    gap: 3rem;
+
+    .card {
+        text-align: center;
+
+        .titel {
+            opacity: 60%;
+            font-size: .9rem;
+            margin-bottom: .3rem;
+        }
+
+        .hedding {
+            color: $text;
+        }
+    }
+}
+
+.section3,
+.section {
+    padding: 1rem 1rem 0;
+
+    .data {
+        .text {
+            .hedding {
+                font-size: 3rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        .text>div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            p {
+
+                font-size: 1.1rem;
+                padding: 0 1rem 5rem 0;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+.section3 {
+    .image {
+        background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d42ed21efba1c98e866246_studio-philosophy-p-1600.webp);
+    }
+}
+
+.section4 {
+    .image {
+        background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdadb9a66a436b50ff_sutdio-values-p-1600.webp);
+    }
+}
+
+.section5 {
+    padding: 4rem 3rem;
+
+    .hedder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .hedding {
+            font-size: 3rem;
+            font-weight: 400;
+            color: $text;
+        }
+
+        a {
+            .icon {
+                i {
+                    transform: rotate(225deg);
+                }
+            }
+        }
+    }
+}
+
+.section6 {
+    padding: 1rem;
+
+    .card-contener {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .cards {
+            height: 30.3rem;
+            width: 30.3rem;
+            position: relative;
+            border-radius: $section-radius;
+            overflow: hidden;
+
+            // background-color: red;
+            .social-media {
+                padding: 2rem 2rem 0 0;
+                position: absolute;
+                right: 0;
+                z-index: 5;
+
+                .icon-contener {
+                    .icon {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        cursor: pointer;
+                        backdrop-filter: blur(1rem);
+                        text-align: center;
+                        background-color: #ffffff17;
+                        transition: all ease-in .2s;
+                        outline: 1px solid #49494930;
+
+                        i {
+                            opacity: 90%;
+                            font-size: .85rem;
+                        }
+
+                        &:hover {
+                            outline: 1.5px solid #616161f6;
+                        }
+                    }
+                }
+            }
+
+            .content {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 5;
+                width: 100%;
+                padding: .8rem 1rem;
+
+                .user_data {
+                    backdrop-filter: blur(1rem);
+                    text-align: center;
+                    background-color: #ffffff17;
+                    color: $text;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 2rem;
+                    border-radius: .7rem;
+                    text-transform: uppercase;
+                    outline: 1.5px solid #aaaaaa3d;
+
+                    p:nth-child(1) {
+                        font-size: 1.5rem;
+                        font-family: $font-1;
+                    }
+
+                    p:nth-child(2) {
+                        font-size: 1rem;
+                        font-family: $font-3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// img
+.section6 {
+    .card-contener {
+        .cards {
+
+            .img {
+                height: 100%;
+                width: 100%;
+                background-size: 110%;
+                background-position: center;
+                filter: brightness(90%);
+                background-repeat: no-repeat;
+            }
+
+            .img-1 {
+                background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-800.webp);
+            }
+
+            .img-2 {
+                background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-800.webp);
+            }
+
+            .img-3 {
+                background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbdc1f945f817bf4fd7_team-03-p-800.webp);
+            }
+        }
+
+
+    }
+}
+
+
+.section7 {
+    padding: 0rem 1rem 0;
+
+    .image {
+        background-image: url(https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd34d35c31355b73d1_studio-team-p-1080.webp);
+    }
+
+    .data {
+        .titel {
+            margin-bottom: 1rem;
+        }
+
+        .text {
+            div {
+                .icon-contener {
+                    margin: 9rem 0rem 2rem;
+
+                }
+            }
+        }
+    }
+}
+
+.section8 {
+    padding: 1rem;
+
+    .content {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        background-color: $color;
+        padding: 4rem 5rem 3rem;
+        border-radius: $section-radius;
+
+        .data {
+            .titel {
+                // font-weight: 200;
+                color: $textDark;
+            }
+
+            .hedding {
+                font-size: 5rem;
+                padding-right: 5rem;
+            }
+        }
+
+        .bg-color {
+            background-color: transparent;
+            justify-items: end;
+            align-self: end;
+            font-family: $font-3;
+
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $bg-color;
+                color: $text;
+
+                i {
+                    transform: rotate(45deg);
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr) .5fr;
+    grid-template-areas:
+        "d1 d2 d2 d2 d2"
+        "d1 d2 d2 d2 d2"
+        "d1 d3 d3 d3 d3"
+    ;
+    grid-gap: 1rem;
+    padding: 0 1rem 1rem;
+
+    div {
+        border-radius: $section-radius;
+        background-color: $bg-color2;
+    }
+
+    .left {
+        padding: 3rem 3rem 2rem;
+        grid-area: d1;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+        align-items: start;
+
+        img {
+            height: 1rem;
+        }
+
+    }
+
+    .top-right {
+        padding: 2rem 3rem 1rem;
+        grid-area: d2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        ul {
+            text-transform: uppercase;
+            list-style: none;
+
+            li:nth-child(1) {
+                font-size: 1.5rem;
+                font-family: $font-1;
+                margin-bottom: 2rem;
+                color: $text;
+                opacity: 100%;
+
+            }
+
+            li {
+                color: #f4f2ed99;
+                font-family: $font-3;
+                margin: 2rem 0;
+                cursor: pointer;
+                justify-items: start;
+                transition: $animation-primary;
+                &:hover{
+                    color: $text;
+                }
+                .btn {
+                    background-color: $color;
+                    color: $textDark;
+                    margin: 2rem 0;
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+
+    .bottom-right {
+        padding: 1rem 3rem;
+        grid-area: d3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+
+        p {
+            font-family: $font-1;
+            color: #f4f2ed99;
+
+            a {
+                opacity: 100%;
+                color: $text;
+            }
         }
     }
 }
