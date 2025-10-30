@@ -165,6 +165,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: $animation-primary;
 
         .logo {
             p {
@@ -178,6 +179,7 @@ header {
         .menu {
             display: flex;
             gap: .4rem;
+
 
 
 
@@ -200,11 +202,24 @@ header {
             }
 
             ul:nth-child(2) {
+                #menu-icon {
+                    display: none;
+
+                    i {
+                        font-size: 1.7rem;
+                    }
+                }
 
                 li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
                     .btn {
                         background-color: $bg-color2;
                         color: $text;
+                        display: flex;
+                        align-items: center;
                     }
 
 
@@ -265,6 +280,7 @@ header {
 
             .hedding {
                 margin-bottom: .5rem;
+                font-size: 2.6rem;
             }
 
             p {
@@ -309,12 +325,14 @@ header {
 
         .hedding {
             color: $text;
+            font-size: 2.5rem;
         }
     }
 }
 
 .section3,
 .section {
+
     padding: 1rem 1rem 0;
 
     .data {
@@ -600,7 +618,7 @@ footer {
             li:nth-child(1) {
                 font-size: 1.5rem;
                 font-family: $font-1;
-                margin-bottom: 2rem;
+                // margin-bottom: 2rem;
                 color: $text;
                 opacity: 100%;
 
@@ -613,9 +631,11 @@ footer {
                 cursor: pointer;
                 justify-items: start;
                 transition: $animation-primary;
-                &:hover{
+
+                &:hover {
                     color: $text;
                 }
+
                 .btn {
                     background-color: $color;
                     color: $textDark;
@@ -645,3 +665,6 @@ footer {
         }
     }
 }
+
+
+

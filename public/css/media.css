@@ -1,0 +1,203 @@
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  header {
+    padding: 1rem 1rem 0rem 1.5rem;
+  }
+  header nav .menu ul:nth-child(1) {
+    display: none;
+  }
+  header nav .menu ul:nth-child(1) .btn {
+    background-color: #1d1d1d;
+    color: #f4f2ed;
+  }
+  header nav .menu ul:nth-child(2) #touch-btn {
+    display: none;
+  }
+  header nav .menu ul:nth-child(2) #cart a {
+    display: flex;
+    background-color: #1d1d1d;
+    color: #f4f2ed;
+    align-items: center;
+  }
+  header nav .menu ul:nth-child(2) #menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .menu ul:nth-child(2) #menu-icon .btn {
+    padding: 0.6rem 1.3rem;
+    background-color: #1d1d1d;
+    color: #f4f2ed;
+  }
+  .section .titel {
+    margin-bottom: 4rem;
+  }
+  .section1,
+  .section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.9fr 1.4fr;
+  }
+  .section1 .data,
+  .section .data {
+    border-radius: 1rem;
+    background-color: #1e1e1e;
+    width: 100%;
+    font-family: f1;
+    padding: 2rem 2rem 0rem;
+  }
+  .section1 .data .text,
+  .section .data .text {
+    color: #f4f2ed;
+  }
+  .section1 .data .text .hedding,
+  .section .data .text .hedding {
+    margin-bottom: 0.5rem;
+    font-size: 2.3rem;
+  }
+  .section1 .data .text p,
+  .section .data .text p {
+    padding: 0;
+  }
+  .section1 .data .text .icon-contener,
+  .section .data .text .icon-contener {
+    margin: 1.5rem 0rem 2rem;
+  }
+  .section2 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem 2rem 1rem;
+  }
+  .section2 .card {
+    text-align: center;
+  }
+  .section2 .card .titel {
+    opacity: 60%;
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+    text-wrap: nowrap;
+  }
+  .section2 .card .hedding {
+    color: #f4f2ed;
+    font-size: 2.25rem;
+  }
+  .section3 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "data";
+  }
+  .section3 .image {
+    grid-area: img;
+  }
+  .section3 .data {
+    grid-area: data;
+    padding: 2rem 2rem 2rem;
+  }
+  .section3 .data .text .hedding {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .section3 .data .text > div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section3 .data .text > div p {
+    font-size: 1rem;
+    padding: 0 1rem 0rem 0;
+    font-weight: 100;
+  }
+  .section4 {
+    padding: 0rem 1rem 0rem 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "data";
+  }
+  .section4 .image {
+    grid-area: img;
+  }
+  .section4 .data {
+    grid-area: data;
+    padding: 2rem 2rem 2rem;
+  }
+  .section4 .data .text .hedding {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .section4 .data .text > div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section4 .data .text > div p {
+    font-size: 1rem;
+    padding: 0 1rem 0rem 0;
+    font-weight: 100;
+  }
+  .section5 {
+    padding: 1rem 2rem 1rem;
+  }
+  .section5 .hedder {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .section5 .hedder .hedding {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #f4f2ed;
+  }
+  .section5 .hedder a {
+    display: none;
+  }
+  .section5 .hedder a .icon i {
+    transform: rotate(225deg);
+  }
+  .section6 .card-contener .cards {
+    height: 23rem;
+  }
+  .section6 .card-contener .cards .content .user_data p:nth-child(1) {
+    font-size: 1rem;
+    font-family: f1;
+  }
+  .section6 .card-contener .cards .content .user_data p:nth-child(2) {
+    font-size: 0.8rem;
+    font-family: f3;
+  }
+  .section8 {
+    padding: 0 1rem;
+  }
+  .section8 .content {
+    padding: 4rem 2rem 3rem;
+    grid-template-columns: 1fr;
+  }
+  .section8 .content .data .titel {
+    color: #1a1a1a;
+  }
+  .section8 .content .data .hedding {
+    font-size: 2.45rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+  }
+  .section8 .content .bg-color {
+    justify-items: stretch;
+    align-self: stretch;
+  }
+  footer {
+    padding: 1rem 1rem 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.55fr 1.6fr 0.1fr;
+    grid-template-areas: "d1" "d2" "d3";
+  }
+  footer .left {
+    padding: 1.5rem;
+  }
+  footer .top-right {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+  }
+  footer .top-right ul li {
+    margin: 1rem 0;
+  }
+  footer .bottom-right {
+    padding: 1rem 2rem;
+    flex-flow: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=media.css.map */

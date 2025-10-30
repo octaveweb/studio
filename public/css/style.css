@@ -123,6 +123,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
 }
 header nav .logo p {
   color: #f4f2ed;
@@ -143,9 +144,22 @@ header nav .menu ul:nth-child(1) li a {
   background-color: #1d1d1d;
   color: #f4f2ed;
 }
+header nav .menu ul:nth-child(2) #menu-icon {
+  display: none;
+}
+header nav .menu ul:nth-child(2) #menu-icon i {
+  font-size: 1.7rem;
+}
+header nav .menu ul:nth-child(2) li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header nav .menu ul:nth-child(2) li .btn {
   background-color: #1d1d1d;
   color: #f4f2ed;
+  display: flex;
+  align-items: center;
 }
 header nav .menu ul:nth-child(2) .bg-color .btn {
   background-color: #cebd63;
@@ -187,6 +201,7 @@ header nav .menu ul:nth-child(2) .bg-color .btn:hover {
 .section1 .data .text .hedding,
 .section .data .text .hedding {
   margin-bottom: 0.5rem;
+  font-size: 2.6rem;
 }
 .section1 .data .text p,
 .section .data .text p {
@@ -225,6 +240,7 @@ header nav .menu ul:nth-child(2) .bg-color .btn:hover {
 }
 .section2 .card .hedding {
   color: #f4f2ed;
+  font-size: 2.5rem;
 }
 
 .section3,
@@ -446,7 +462,6 @@ footer .top-right ul {
 footer .top-right ul li:nth-child(1) {
   font-size: 1.5rem;
   font-family: f1;
-  margin-bottom: 2rem;
   color: #f4f2ed;
   opacity: 100%;
 }
